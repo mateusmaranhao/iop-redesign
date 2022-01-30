@@ -116,3 +116,53 @@ section.about {
 .about-links ul li a:hover {
   border-bottom: 2px solid var(--accent);
 }
+
+/* ========== faq ========== */
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6.25rem;
+}
+.faq h3 {
+  color: var(--accent);
+  font-size: 2rem;
+}
+.faq-list dt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--dark);
+  background-color: #F3E6D8;
+  margin: 2rem 0 .5rem;
+  padding: 1.25rem;
+}
+.faq-list dd {
+  margin: 0 0 0.5rem 1.875rem;
+}
+.js-accordion dd {
+  display: none;
+  width: 25vw;
+}
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .6s forwards;
+}
+.js-accordion dt::after {
+  content: '⬎';
+  margin-left: 10px;
+}
+.js-accordion dt.ativo::after {
+  content: '⬏';
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
