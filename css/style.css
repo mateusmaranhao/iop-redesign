@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+  --white: #F9F3EB;
+  --black: #121214;
+  --accent: #D2A26C;
+  --cta-hover: #DBB58A;
+  --dark: #27221E;
+}
+html {
+  background-color: var(--black);
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  background: url("../img/hero-bg.png") no-repeat top right;
+}
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  padding: 0 20vh;
+}
+.cta {
+  font-weight: 700;
+  background-color: var(--accent);
+  padding: 0.938rem 2rem;
+  border-radius: 0.313rem;
+  letter-spacing: 0.063rem;
+
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.cta:hover {
+  transition: .3s;
+  background-color: var(--cta-hover);
+}
+
+/* ========== header ========== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: var(--white);
+  font-weight: 700;
+}
+header a img {
+  margin: 3.125rem 0;
+}
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+}
+nav ul li a, 
+.about-links ul li a {
+  letter-spacing: 0.031rem;
+}
+nav ul li a:hover {
+  color: var(--accent);
+  transition: .3s;
+}
+
+/* ========== hero ========== */
+section.hero {
+  height: calc(100vh - 20rem);
+}
+.hero h1 {
+  color: var(--white);
+  font-size: 5.063rem;
+  line-height: 5.063rem;
+  width: 50rem;
+  margin: 6.875rem 0 2.5rem;
+}
+
+/* ========== about ========== */
+section.about {
+  background-color: var(--white);
+}
+.about h2 {
+  text-align: center;
+  color: var(--accent);
+  font-size: 54px;
+  padding: 100px 0 40px;
+}
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.about p {
+  line-height: 1.5;
+}
+.about-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+.about-links ul li a {
+  color: var(--accent);
+  font-weight: 700;
+}
+.about-links ul li a:hover {
+  border-bottom: 2px solid var(--accent);
+}
