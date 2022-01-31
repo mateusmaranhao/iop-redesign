@@ -137,6 +137,7 @@ section.about {
   background-color: #F3E6D8;
   margin: 2rem 0 .5rem;
   padding: 1.25rem;
+  cursor: pointer;
 }
 .faq-list dd {
   margin: 0 0 0.5rem 1.875rem;
@@ -165,4 +166,18 @@ section.about {
     opacity: 1;
     max-height: 200px;
   }
+}
+/* ========== imgs ========== */
+section.imgs {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.imgs img {
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+.imgs img:hover {
+  filter: grayscale(0%);
+  transition: .3s;
 }
