@@ -21,6 +21,9 @@ body, * {
 a {
   text-decoration: none;
 }
+p {
+  line-height: 1.5;
+}
 ul {
   list-style: none;
 }
@@ -100,9 +103,6 @@ section.about {
   justify-content: center;
   gap: 1.875rem;
   margin-bottom: 3.75rem;
-}
-.about p {
-  line-height: 1.5;
 }
 .about-links ul {
   display: flex;
@@ -199,6 +199,9 @@ section.imgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+
+  height: 19.699rem;
+  margin-bottom: 6.25rem;
 }
 .projetos a.andamento {
   background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)),
@@ -212,10 +215,6 @@ section.imgs {
   background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)),
     url("../img/metodologias.png") no-repeat top center/cover;
 }
-.projetos  {
-  height: 19.699rem;
-  margin-bottom: 6.25rem;
-}
 .projetos p {
   margin: 0;
   position: relative;
@@ -224,4 +223,25 @@ section.imgs {
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--white);
+}
+
+/* ========== conservação ========== */
+.conservacao h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.conservacao-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.conservacao-texto {
+  width: 50.625rem;
+}
+.conservacao-texto p {
+  color: var(--white);
+}
+.conservacao-texto a {
+  color: var(--accent);
 }
