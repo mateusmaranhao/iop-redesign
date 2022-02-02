@@ -245,3 +245,39 @@ section.imgs {
 .conservacao-texto a {
   color: var(--accent);
 }
+
+/* ========== Doação ========== */
+.doacao {
+  color: var(--white);
+}
+.doacao h2 {
+  text-align: center;
+  margin: 100px 0 40px;
+}
+.doacao h3 {
+  font-size: 54px;
+  width: 705px;
+}
+.doacao img {
+  height: 100%;
+  width: 50%;
+}
+.doacao a {
+  color: var(--accent);
+}
+.doacao .photo-left,
+.doacao .photo-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.doacao .photo-left .doacao-texto h3 {
+  margin: 0 10vh 20px 0;
+}
+.photo-right h3 {
+  margin: 0 0 20px 10vh;
+}
+.photo-right a {
+  margin-left: 10vh;
+}
