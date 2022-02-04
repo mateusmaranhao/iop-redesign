@@ -150,7 +150,7 @@ section.about {
 }
 .js-accordion dd.ativo {
   display: block;
-  animation: slideDown .6s forwards;
+  animation: slideDown .25s forwards;
 }
 .js-accordion dt::after {
   content: '⬎';
@@ -203,17 +203,29 @@ section.imgs {
   height: 19.699rem;
   margin-bottom: 6.25rem;
 }
+.projetos a.ativo {
+  transform: scale(1.012);
+}
 .projetos a.andamento {
-  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)),
-    url("../img/projeto-andamento.png") no-repeat top center/cover;
+  background: url("../img/projeto-andamento.png") no-repeat top center/cover;
+}
+.projetos a.andamento:hover {
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7)), url("../img/projeto-andamento.png") no-repeat top center/cover;
+  transition: 0.6s;
 }
 .projetos a.concluido {
-  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)),
-    url("../img/projeto-concluido.png") no-repeat top center/cover;
+  background: url("../img/projeto-concluido.png") no-repeat top center/cover;
+}
+.projetos a.concluido:hover {
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)), url("../img/projeto-concluido.png") no-repeat top center/cover;
+  transition: 0.6s;
 }
 .projetos a.metodologias {
-  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)),
-    url("../img/metodologias.png") no-repeat top center/cover;
+  background: url("../img/metodologias.png") no-repeat top center/cover;
+}
+.projetos a.metodologias:hover {
+  background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0, .7)), url("../img/metodologias.png") no-repeat top center/cover;
+  transition: 0.6s;
 }
 .projetos p {
   margin: 0;

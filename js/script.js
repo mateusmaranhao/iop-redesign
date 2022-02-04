@@ -16,3 +16,23 @@ function initAccordion() {
   }
 };
 initAccordion();
+
+function initParagraphHover() {
+  const paragraphs = document.querySelectorAll('.projetos a');
+  const activeClass = 'ativo';
+
+  function activeHover() {
+    this.classList.add(activeClass);
+  }
+  function removeHover() {
+    this.classList.remove(activeClass);
+  }
+
+  paragraphs.forEach((paragraph) => {
+    paragraph.addEventListener('mouseover', activeHover)
+  })
+  paragraphs.forEach((paragraph) => {
+    paragraph.addEventListener('mouseout', removeHover)
+  })
+}
+initParagraphHover();
