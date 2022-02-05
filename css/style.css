@@ -293,3 +293,56 @@ section.imgs {
 .photo-right a {
   margin-left: 10vh;
 }
+
+/* ========== Form ========== */
+.doacao .photo-left.formSection {
+  justify-content: left;
+  gap: 155px;
+}
+.doacao .photo-left.formSection h3 {
+  margin-bottom: 40px;
+}
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  font-weight: 400;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.form input,
+.form textarea{
+  background-color: transparent;
+  color: var(--white);
+}
+::-webkit-input-placeholder {
+  color: rgba(249, 243, 235, 0.5);
+  font-family: 'Outfit', sans-serif;
+}
+input:-moz-placeholder {
+  color: rgba(249, 243, 235, 0.5);
+  font-family: 'Outfit', sans-serif;
+}
+textarea:-moz-placeholder {
+  color: rgba(249, 243, 235, 0.5);
+  font-family: 'Outfit', sans-serif;
+}
+.underline::after,
+.underline-txt::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--white);
+}
+.underline::after {
+  margin: 10px 0 30px;
+}
+.underline-txt::after {
+  margin: -5px 0 30px;
+}
+.form button {
+  font-weight: 700;
+  cursor: pointer;
+}
