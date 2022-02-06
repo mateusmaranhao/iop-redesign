@@ -246,7 +246,7 @@ section.imgs {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 3.75rem;
 }
 .conservacao-texto {
   width: 50.625rem;
@@ -264,11 +264,12 @@ section.imgs {
 }
 .doacao h2 {
   text-align: center;
-  margin: 100px 0 40px;
+  margin: 6.25rem 0 2.5rem;
 }
 .doacao h3 {
-  font-size: 54px;
-  width: 705px;
+  font-size: 3.375rem;
+  line-height: 1.2;
+  width: 44.063rem;
 }
 .doacao img {
   height: 100%;
@@ -285,22 +286,29 @@ section.imgs {
   height: 100vh;
 }
 .doacao .photo-left .doacao-texto h3 {
-  margin: 0 10vh 20px 0;
+  margin: 0 10vh 1.25rem 0;
 }
 .photo-right h3 {
-  margin: 0 0 20px 10vh;
+  margin: 0 0 1.25rem 10vh;
 }
 .photo-right a {
   margin-left: 10vh;
 }
-
+.apoie {
+  margin: 3.75rem 0;
+  display: flex;
+  justify-content: center;
+}
+.apoie a {
+  color: var(--dark);
+}
 /* ========== Form ========== */
 .doacao .photo-left.formSection {
   justify-content: left;
-  gap: 155px;
+  gap: 9.688rem;
 }
 .doacao .photo-left.formSection h3 {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 .form input,
 .form textarea,
@@ -333,16 +341,63 @@ textarea:-moz-placeholder {
   content: '';
   display: block;
   width: 100%;
-  height: 2px;
+  height: 0.125rem;
   background: var(--white);
 }
 .underline::after {
-  margin: 10px 0 30px;
+  margin: 0.625rem 0 1.875rem;
 }
 .underline-txt::after {
-  margin: -5px 0 30px;
+  margin: -0.313rem 0 1.875rem;
 }
 .form button {
   font-weight: 700;
   cursor: pointer;
+}
+
+
+/* ========== Footer ========== */
+footer {
+  background-color: var(--accent);
+  padding: 3.75rem 0;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6.25rem;
+  margin-bottom: 3.75rem;
+}
+footer h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1.875rem;
+}
+footer ul li, 
+footer ul li a {
+  margin-bottom: 1.25rem;
+  color: var(--white);
+}
+.social-media ul {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1.875rem;
+}
+.social-media ul li {
+  background-color: var(--dark);
+  border-radius: 50%;
+  text-align: center;
+}
+.social-media ul li i {
+  width: 3.438rem;
+  height: 3.438rem;
+  padding-top: 28%;
+}
+.links-uteis a:hover {
+  border-bottom: 0.125rem solid var(--white);
+}
+footer p {
+  text-align: center;
+  color: var(--dark);
+  opacity: .6;
 }
