@@ -51,6 +51,20 @@ h2 {
   background-color: var(--cta-hover);
 }
 
+/* ========== Scrollbar ========== */
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--dark);
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--accent);
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
 /* ========== header ========== */
 header {
   display: flex;
